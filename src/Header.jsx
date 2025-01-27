@@ -14,17 +14,17 @@ function Header(props) {
 
                 <ul className="flex items-center space-x-5">
                     <li>
-                        <a className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
+                        <a className="bg-green-400/20 dark:bg-green-400/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
                             <img src={Ring} width="24" height="24" alt="" />
                         </a>
                     </li>
                     <li>
-                        <a className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
+                        <a className="bg-green-400/20 dark:bg-green-400/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
                             <img src={Moon} width="24" height="24" alt="" />
                         </a>
                     </li>
                     <li>
-                        <a className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
+                        <a className="bg-green-400/20 dark:bg-green-400/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
                             <img src={ShoppingCart} width="24" height="24" alt="" />
                         </a>
                     </li>
