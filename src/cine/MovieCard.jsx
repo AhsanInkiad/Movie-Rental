@@ -6,6 +6,7 @@ import MovieDetailsModal from './MovieDetailsModal';
 function MovieCard({ movie }) {
     const [showModal, setShowModal] = useState(false);
     const [selectedMovie, setSelectedMovie] = useState(null);
+    
     function handleModalClose() {
         setSelectedMovie(null);
         setShowModal(false);
@@ -16,8 +17,8 @@ function MovieCard({ movie }) {
         setShowModal(true);
     }
 
-    function handleAddToCart(movie){
-
+    function handleAddToCart(event, movie){
+        event.stopPropagation();
     }
     return (
         <>
@@ -33,7 +34,7 @@ function MovieCard({ movie }) {
                             <Rating value={movie.rating}></Rating>
                         </div>
                         <button 
-                        onClick={()=>handleAddToCart(movie)}
+                        onClick={(e)=>handleAddToCart(e, movie)}
                         className="bg-green-400 rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
                            >
                             <img src="./assets/tag.svg" alt="" />
