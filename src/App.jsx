@@ -6,7 +6,8 @@ import Footer from './footer'
 import Header from './Header'
 import SideBar from './SideBar'
 import { cartReducer, initialState } from './reducers/CartReducer'
- import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+
 function App() {
   // const [cartData, setCartData] = useState([]);
   const [state, dispatch] = useReducer(cartReducer, initialState);

@@ -3,6 +3,7 @@ import { getImageUrl } from '../utils/cine-utility';
 import Rating from './Rating';
 import MovieDetailsModal from './MovieDetailsModal';
 import { MovieContext } from '../context';
+import { toast } from 'react-toastify';
 
 function MovieCard({ movie }) {
     const [showModal, setShowModal] = useState(false);
@@ -33,9 +34,11 @@ function MovieCard({ movie }) {
                 payload: {
                     ...movie
                 }
-            })
+            });
+
+            toast.success('Movie added in cart!')
         } else {
-            console.log(`The movie ${movie.title} has already been added!`)
+            toast.error(`The movie ${movie.title} has already been added!`)
         }
 
     }
