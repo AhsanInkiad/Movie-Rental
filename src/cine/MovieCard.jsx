@@ -7,7 +7,6 @@ import { MovieContext } from '../context';
 function MovieCard({ movie }) {
     const [showModal, setShowModal] = useState(false);
     const [selectedMovie, setSelectedMovie] = useState(null);
-    const { cartData, setCartData } = useContext(MovieContext)
     const { state, dispatch } = useContext(MovieContext)
 
 
